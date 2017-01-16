@@ -305,7 +305,7 @@ defmodule Exgettext.HTML do
   defp templates_path(patterns) do
 #    IO.inspect [DIR: __DIR__]
     Enum.into(patterns, [], fn {pattern, dir} ->
-      {"deps/ex_doc/lib/ex_doc/formatter/html/templates/#{pattern}", dir}
+      {"deps/ex_doc/priv/ex_doc/formatter/html/assets/#{pattern}", dir}
     end)
   end
 end
