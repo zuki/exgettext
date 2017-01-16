@@ -40,6 +40,7 @@ defmodule Exgettext.HTML do
   end
 
   alias ExDoc.Formatter.HTML.{Assets, Autolink, Templates}
+  alias ExDoc.Markdown
 
   @doc """
   Generate HTML documentation for the given modules
