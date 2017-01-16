@@ -10,35 +10,32 @@ defmodule Exgettext.HTML do
     module_nodes |>
     Enum.map(fn(mod) ->
                app = Exgettext.Util.get_app(mod.module)
-               new_mod =
-                 mod |>
-                 Map.update(:moduledoc, nil, &(gettext(app, &1))) |>
-                 Map.update(:docs, nil,
-                            &(Enum.map(&1,
-                                       fn(x) ->
-                                         Map.update(x, :doc, nil,
-                                                    fn(y) ->
-                                                      gettext(app, y)
-                                                    end)
-                                       end))) |>
-                 Map.update(:typespecs, nil,
-                            &(Enum.map(&1,
-                                       fn(x) ->
-                                         Map.update(x, :doc, nil,
-                                                    fn(y) ->
-                                                      gettext(app, y)
-                                                    end)
-                                       end))) |>
-                 Map.update(:callback, nil,
-                            &(Enum.map(&1,
-                                       fn(x) ->
-                                         Map.update(x, :doc, nil,
-                                                    fn(y) ->
-                                                      gettext(app, y)
-                                                    end)
-                                       end)))
-               Map.put(new_mod, :doc, Map.get(new_mod, :moduledoc))
-               new_mod
+               mod |>
+               Map.update(:doc, nil, &(gettext(app, &1))) |>
+               Map.update(:docs, nil,
+                          &(Enum.map(&1,
+                                     fn(x) ->
+                                       Map.update(x, :doc, nil,
+                                                  fn(y) ->
+                                                    gettext(app, y)
+                                                  end)
+                                     end))) |>
+               Map.update(:typespecs, nil,
+                          &(Enum.map(&1,
+                                     fn(x) ->
+                                       Map.update(x, :doc, nil,
+                                                  fn(y) ->
+                                                    gettext(app, y)
+                                                  end)
+                                     end))) |>
+               Map.update(:callback, nil,
+                          &(Enum.map(&1,
+                                     fn(x) ->
+                                       Map.update(x, :doc, nil,
+                                                  fn(y) ->
+                                                    gettext(app, y)
+                                                  end)
+                                     end)))
              end)
   end
 
