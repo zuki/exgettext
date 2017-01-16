@@ -25,12 +25,12 @@ defmodule Exgettext.Introspection do
       {:error, reason} ->
         IO.puts IEx.color(:eval_error, "Could not load module #{inspect module}, got: #{reason}")
     end
-    dont_display_result
+    dont_display_result()
   end
 
   def h(_) do
     IO.puts IEx.color(:eval_error, "Invalid arguments for h helper")
-    dont_display_result
+    dont_display_result()
   end
 
   @doc """
@@ -46,7 +46,7 @@ defmodule Exgettext.Introspection do
     unless result == :ok, do:
       nodocs(function)
 
-    dont_display_result
+    dont_display_result()
   end
 
   def h(module, function) when is_atom(module) and is_atom(function) do
@@ -59,7 +59,7 @@ defmodule Exgettext.Introspection do
         nodocs("#{inspect module}.#{function}")
     end
 
-    dont_display_result
+    dont_display_result()
   end
 
   defp h_mod_fun(mod, fun) when is_atom(mod) and is_atom(fun) do
@@ -88,7 +88,7 @@ defmodule Exgettext.Introspection do
     unless result == :ok, do:
       nodocs("#{function}/#{arity}")
 
-    dont_display_result
+    dont_display_result()
   end
 
   def h(module, function, arity) when is_atom(module) and is_atom(function) and is_integer(arity) do
@@ -101,7 +101,7 @@ defmodule Exgettext.Introspection do
         nodocs("#{inspect module}.#{function}/#{arity}")
     end
 
-    dont_display_result
+    dont_display_result()
   end
 
   defp h_mod_fun_arity(mod, fun, arity) when is_atom(mod) and is_atom(fun) and is_integer(arity) do

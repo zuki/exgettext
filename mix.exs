@@ -3,7 +3,7 @@ defmodule Exgettext.Mixfile do
 
   def project do
     [app: :exgettext,
-     version: "0.1.1",
+     version: "0.1.2",
 #     elixir: "~> 1.1.0-beta or ~> 1.0.0 or ~> 0.15.0-dev",
      compilers: Mix.compilers ++ [:po],
      description: "Localization package using GNU gettext",
@@ -12,7 +12,7 @@ defmodule Exgettext.Mixfile do
                licenses: ["MIT"],
                links: %{"GitHub" => "https://github.com/k1complete/exgettext"}
        ],
-     deps: deps]
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -32,6 +32,6 @@ defmodule Exgettext.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:ex_doc, git: "https://github.com/elixir-lang/ex_doc"}]
   end
 end

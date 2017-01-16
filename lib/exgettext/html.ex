@@ -12,27 +12,27 @@ defmodule Exgettext.HTML do
                app = Exgettext.Util.get_app(mod.module)
                mod |>
                Map.update(:moduledoc, nil, &(gettext(app, &1))) |>
-               Map.update(:docs, nil, 
-                          &(Enum.map(&1, 
-                                     fn(x) -> 
+               Map.update(:docs, nil,
+                          &(Enum.map(&1,
+                                     fn(x) ->
                                        Map.update(x, :doc, nil,
-                                                  fn(y) -> 
+                                                  fn(y) ->
                                                     gettext(app, y)
                                                   end)
                                      end))) |>
                Map.update(:typespecs, nil,
-                          &(Enum.map(&1, 
-                                     fn(x) -> 
+                          &(Enum.map(&1,
+                                     fn(x) ->
                                        Map.update(x, :doc, nil,
-                                                  fn(y) -> 
+                                                  fn(y) ->
                                                     gettext(app, y)
                                                   end)
                                      end))) |>
                Map.update(:callback, nil,
-                          &(Enum.map(&1, 
-                                     fn(x) -> 
+                          &(Enum.map(&1,
+                                     fn(x) ->
                                        Map.update(x, :doc, nil,
-                                                  fn(y) -> 
+                                                  fn(y) ->
                                                     gettext(app, y)
                                                   end)
                                      end)))
@@ -51,10 +51,10 @@ defmodule Exgettext.HTML do
     File.rm_rf! output
     :ok = File.mkdir_p output
 
-    assets |> templates_path() |> generate_assets(output)
+    assets() |> templates_path() |> generate_assets(output)
 
     module_nodes = module_translate(module_nodes, config)
-    all = Autolink.all(module_nodes)
+    all = Autolink.all(module_nodes, nil, [])
     modules    = filter_list(:modules, all)
     exceptions = filter_list(:exceptions, all)
     protocols  = filter_list(:protocols, all)
@@ -92,19 +92,20 @@ defmodule Exgettext.HTML do
   end
 
   defp generate_api_reference(modules, exceptions, protocols, output, config) do
-    content = Templates.api_reference_template(config, modules, exceptions, protocols)
+    nodes_map = %{modules: modules, exceptions: exceptions, protocols: protocols}
+    content = Templates.api_reference_template(config, nodes_map)
     File.write!("#{output}/api-reference.html", content)
   end
 
   defp generate_not_found(modules, exceptions, protocols, output, config) do
-    content = Templates.not_found_template(config, modules, exceptions, protocols)
+    nodes_map = %{modules: modules, exceptions: exceptions, protocols: protocols}
+    content = Templates.not_found_template(config, nodes_map)
     File.write!("#{output}/404.html", content)
   end
 
   defp generate_sidebar_items(modules, exceptions, protocols, extras, output) do
-    nodes = %{modules: modules, protocols: protocols,
-              exceptions: exceptions, extras: extras}
-    content = Templates.create_sidebar_items(nodes)
+    nodes_map = %{modules: modules, protocols: protocols, exceptions: exceptions}
+    content = Templates.create_sidebar_items(nodes_map, extras)
     File.write!("#{output}/dist/sidebar_items.js", content)
   end
 
@@ -181,9 +182,8 @@ defmodule Exgettext.HTML do
         |> Autolink.project_doc(module_nodes)
 
       title = options[:title] || extract_title(content) || input_to_title(options[:input])
-
-      html = Templates.extra_template(config, title, modules,
-                                      exceptions, protocols, link_headers(content))
+      nodes_map = %{modules: modules, exceptions: exceptions, protocols: protocols}
+      html = Templates.extra_template(config, title, nodes_map, content)
 
       output = "#{options.output}/#{options.output_file_name}.html"
 
@@ -297,7 +297,8 @@ defmodule Exgettext.HTML do
   end
 
   defp generate_module_page(node, modules, exceptions, protocols, output, config) do
-    content = Templates.module_page(node, modules, exceptions, protocols, config)
+    nodes_map = %{modules: modules, protocols: protocols, exceptions: exceptions}
+    content = Templates.module_page(node, nodes_map, config)
     File.write!("#{output}/#{node.id}.html", content)
   end
 
