@@ -37,7 +37,7 @@ defmodule Exgettext.HTML do
                                                       gettext(app, y)
                                                     end)
                                        end)))
-               Map.update(new_mod, :doc, nil, Map.get(new_mod, :moduledoc))
+               Map.put(new_mod, :doc, Map.get(new_mod, :moduledoc))
                new_mod
              end)
   end
