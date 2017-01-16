@@ -224,7 +224,7 @@ defmodule Exgettext.HTML do
 
     if valid_extension_name?(input) do
       content =
-        Path.join(dir, "..", input)
+        Path.join([dir, "..", input])
         |> File.read!()
         |> Exgettext.Runtime.translate(%{module: m, app: app})
         |> Autolink.project_doc(project_nodes, nil, extension)
