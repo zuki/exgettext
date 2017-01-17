@@ -90,6 +90,7 @@ defmodule Exgettext.Tool do
                     fn(x, acc) ->
                       convert_po(x, acc)
                     end)
+    IO.inspect [r: r]
     {:ok, dets} = :dets.open_file(outfile,[])
     :dets.delete_all_objects(dets)
     :dets.insert(dets, (Enum.map Map.keys(r), &({&1, Map.get(r, &1)})))
