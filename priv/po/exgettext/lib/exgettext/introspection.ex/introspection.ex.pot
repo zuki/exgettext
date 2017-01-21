@@ -1,0 +1,10 @@
+#. TRANSLATORS: def Exgettext.Introspection.h(modules, function, arity)
+#: lib/exgettext/introspection.ex:78 
+msgid ""
+"Documentation for the given function and arity in the list of modules.\n"
+msgstr ""
+#. TRANSLATORS: def Exgettext.Introspection.h(modules, function)
+#: lib/exgettext/introspection.ex:36 
+msgid ""
+"Docs for the given function, with any arity, in any of the modules.\n"
+msgstr ""

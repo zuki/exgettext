@@ -1,0 +1,9 @@
+#. TRANSLATORS: def Exgettext.Runtime.translate(content, config)
+#: lib/exgettext/runtime.ex:86 
+msgid ""
+"multiple content translator with plugin.\n"
+"\n"
+"config is %{module: module, app: app} format.\n"
+"if faileld, return original content with warning.\n"
+"translator is decided by Mix Project conig[:exgettext][:extra]\n"
+msgstr ""

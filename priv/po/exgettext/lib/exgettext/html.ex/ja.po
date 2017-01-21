@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2017-01-21 21:32+0900\n"
+"Last-Translator: DSpaceユーザ <EMAIL@ADDRESS>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. TRANSLATORS: def Exgettext.HTML.generate_logo(dir, map)
+#: lib/exgettext/html.ex:282
+msgid ""
+"Generates the logo from config into the given directory\n"
+"and adjusts the logo config key.\n"
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.HTML.run(module_nodes, config)
+#: lib/exgettext/html.ex:45
+msgid "Generate HTML documentation for the given modules\n"
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.HTML.title_to_id(title)
+#: lib/exgettext/html.ex:275
+msgid "Creates an ID from a given title\n"
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.HTML.input_to_title(input)
+#: lib/exgettext/html.ex:268
+msgid "Convert the input file name into a title_to_filename/1\n"
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.HTML.build_extras(project_nodes, config, extension)
+#: lib/exgettext/html.ex:198
+msgid "Builds extra nodes by normalizing the config entries.\n"
+msgstr ""
+
+#. TRANSLATORS: Elixir.Exgettext.HTML Summary
+#: lib/exgettext/html.ex:5
+msgid "Generate HTML documentation for Elixir projects\n"
+msgstr ""

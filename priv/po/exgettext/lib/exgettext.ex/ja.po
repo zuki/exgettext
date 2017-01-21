@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-01-21 21:43+0900\n"
+"Last-Translator: DSpaceユーザ <EMAIL@ADDRESS>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. TRANSLATORS: def Exgettext.setlocale(lang)
+#: lib/exgettext.ex:51
+msgid ""
+"set locale to Process dictionary :'Exgettext.Lang' \n"
+"from lang or LANG environment.\n"
+msgstr ""
+"langまたはLANG環境変数からプロセス辞書 :’Exgettext.Lang’に\n"
+"ロケールをセットします。\n"
+
+#. TRANSLATORS: defmacro Exgettext.txt(s)
+#: lib/exgettext.ex:98
+msgid "translate target string by LANG environment.\n"
+msgstr "LANG環境変数で対象文字列を翻訳します。\n"
+
+#. TRANSLATORS: def Exgettext.lang(lang)
+#: lib/exgettext.ex:42
+msgid ""
+"get current 2byte language code from LANG environment variable format.\n"
+msgstr "LANG環境変数フォーマットから現在の2バイトの言語コードを取得します。\n"
+
+#. TRANSLATORS: defmacro Exgettext.txt(s, lang)
+#: lib/exgettext.ex:110
+msgid "translate target string by lang.\n"
+msgstr "langにより対象文字列を翻訳します。\n"
+
+#. TRANSLATORS: Elixir.Exgettext Summary
+#: lib/exgettext.ex:2
+msgid ""
+"** Localization package for Elixir\n"
+"\n"
+"*** target\n"
+"0. setlocale() \n"
+"1. ~L sigil quoted string literal\n"
+"2. @moduledoc\n"
+"3. @doc\n"
+"\n"
+"*** example\n"
+"  example for the :app application:\n"
+"\n"
+"  ```\n"
+"  use Exgettext\n"
+"  def hello do\n"
+"    setlocale()  \n"
+"    ~L \"Hello, World.\"\n"
+"  end\n"
+"  ```\n"
+"\n"
+"  ~L macro expanded to\n"
+"\n"
+"  ```\n"
+"  def hello do\n"
+"    Exgettext.setlocale()\n"
+"    Exgettext.Runtime.gettext(:app, \"Hello, World.\")\n"
+"  end\n"
+"  ```\n"
+msgstr ""
+"** Elixir向けの地域化パッケージ\n"
+"\n"
+"*** 対象\n"
+"0. setlocale() \n"
+"1. ~L シギルでクォートされた文字列リテラル\n"
+"2. @moduledoc\n"
+"3. @doc\n"
+"\n"
+"*** 例\n"
+"   :app アプリケーションの例:\n"
+"\n"
+"  ```\n"
+"  use Exgettext\n"
+"  def hello do\n"
+"    setlocale()  \n"
+"    ~L \"Hello, World.\"\n"
+"  end\n"
+"  ```\n"
+"\n"
+"  ~Lマクロは展開されて次のようになります\n"
+"\n"
+"  ```\n"
+"  def hello do\n"
+"    Exgettext.setlocale()\n"
+"    Exgettext.Runtime.gettext(:app, \"Hello, World.\")\n"
+"  end\n"
+"  ```\n"
+
+#. TRANSLATORS: def Exgettext.getlocale()
+#: lib/exgettext.ex:61
+msgid "get locale from Process dictionary :'Exgettext.Lang'\n"
+msgstr "プロセス辞書:'Exgettext.Lang’からロケールを取得します。\n"
+
+#. TRANSLATORS: defmacro Exgettext.sigil_L(arg, options)
+#: lib/exgettext.ex:82
+msgid "~L is detect to translate target string.\n"
+msgstr "~Lが翻訳対象文字列として検出されます。\n"

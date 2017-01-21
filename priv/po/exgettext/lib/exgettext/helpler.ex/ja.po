@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2017-01-21 21:32+0900\n"
+"Last-Translator: DSpaceユーザ <EMAIL@ADDRESS>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. TRANSLATORS: defmacro Exgettext.Helper.h(other)
+#: lib/exgettext/helpler.ex:13
+msgid ""
+"Prints the localized documentation for the given module or\n"
+"for the given function/arity pair.\n"
+"if there is not localized document, prints original documentation.\n"
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Helper.h()
+#: lib/exgettext/helpler.ex:3
+msgid ""
+"Prints the localized documentation for IEx.Helpers.\n"
+"if there is not localized document, prints original documentation.\n"
+msgstr ""

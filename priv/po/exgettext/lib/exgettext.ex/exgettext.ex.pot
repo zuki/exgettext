@@ -1,0 +1,62 @@
+#. TRANSLATORS: def Exgettext.setlocale(lang)
+#: lib/exgettext.ex:51 
+msgid ""
+"set locale to Process dictionary :'Exgettext.Lang' \n"
+"from lang or LANG environment.\n"
+msgstr ""
+#. TRANSLATORS: defmacro Exgettext.txt(s)
+#: lib/exgettext.ex:98 
+msgid ""
+"translate target string by LANG environment.\n"
+msgstr ""
+#. TRANSLATORS: def Exgettext.lang(lang)
+#: lib/exgettext.ex:42 
+msgid ""
+"get current 2byte language code from LANG environment variable format.\n"
+msgstr ""
+#. TRANSLATORS: defmacro Exgettext.txt(s, lang)
+#: lib/exgettext.ex:110 
+msgid ""
+"translate target string by lang.\n"
+msgstr ""
+#. TRANSLATORS: Elixir.Exgettext Summary
+#: lib/exgettext.ex:2 
+msgid ""
+"** Localization package for Elixir\n"
+"\n"
+"*** target\n"
+"0. setlocale() \n"
+"1. ~L sigil quoted string literal\n"
+"2. @moduledoc\n"
+"3. @doc\n"
+"\n"
+"*** example\n"
+"  example for the :app application:\n"
+"\n"
+"  ```\n"
+"  use Exgettext\n"
+"  def hello do\n"
+"    setlocale()  \n"
+"    ~L \"Hello, World.\"\n"
+"  end\n"
+"  ```\n"
+"\n"
+"  ~L macro expanded to\n"
+"\n"
+"  ```\n"
+"  def hello do\n"
+"    Exgettext.setlocale()\n"
+"    Exgettext.Runtime.gettext(:app, \"Hello, World.\")\n"
+"  end\n"
+"  ```\n"
+msgstr ""
+#. TRANSLATORS: def Exgettext.getlocale()
+#: lib/exgettext.ex:61 
+msgid ""
+"get locale from Process dictionary :'Exgettext.Lang'\n"
+msgstr ""
+#. TRANSLATORS: defmacro Exgettext.sigil_L(arg, options)
+#: lib/exgettext.ex:82 
+msgid ""
+"~L is detect to translate target string.\n"
+msgstr ""

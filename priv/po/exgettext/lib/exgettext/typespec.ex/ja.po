@@ -1,0 +1,131 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2017-01-21 21:32+0900\n"
+"Last-Translator: DSpaceユーザ <EMAIL@ADDRESS>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. TRANSLATORS: def Exgettext.Typespec.beam_types(a1)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.beam_types/1`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.spec_to_ast(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.spec_to_ast/2`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.translate_type(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.translate_type/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.defines_spec?(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.defines_spec?/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.define_type(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.define_type/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.type_to_ast(a1)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.type_to_ast/1`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.MACRO-defcallback(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.MACRO-defcallback/2`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.define_spec(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.define_spec/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.defspec(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.defspec/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.translate_spec(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.translate_spec/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.deftype(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.deftype/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.MACRO-defspec(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.MACRO-defspec/2`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.MACRO-deftypep(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.MACRO-deftypep/2`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.beam_specs(a1)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.beam_specs/1`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.MACRO-defopaque(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.MACRO-defopaque/2`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.defines_callback?(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.defines_callback?/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.type_to_signature(a1)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.type_to_signature/1`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.MACRO-defoptional_callbacks(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.MACRO-defoptional_callbacks/2`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.define_type(a1, a2, a3, a4)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.define_type/4`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.beam_callbacks(a1)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.beam_callbacks/1`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.defines_type?(a1, a2, a3)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.defines_type?/3`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.spec_to_signature(a1)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.spec_to_signature/1`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.MACRO-defmacrocallback(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.MACRO-defmacrocallback/2`."
+msgstr ""
+
+#. TRANSLATORS: def Exgettext.Typespec.MACRO-deftype(a1, a2)
+#: lib/exgettext/typespec.ex:1
+msgid "See `Kernel.Typespec.MACRO-deftype/2`."
+msgstr ""

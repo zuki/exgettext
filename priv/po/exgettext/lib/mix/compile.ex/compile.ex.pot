@@ -1,0 +1,5 @@
+#. TRANSLATORS: Elixir.Mix.Tasks.Compile.Po Summary
+#: lib/mix/compile.ex:3 
+msgid ""
+"po compile\n"
+msgstr ""

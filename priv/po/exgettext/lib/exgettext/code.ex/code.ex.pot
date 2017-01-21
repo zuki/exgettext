@@ -1,0 +1,167 @@
+#. TRANSLATORS: def Exgettext.Code.compile_quoted(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.compile_quoted/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_string(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_string/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.compile_string(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.compile_string/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.ensure_compiled(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.ensure_compiled/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_file(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_file/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.compiler_options()
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.compiler_options/0`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.unload_files(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.unload_files/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.require_file(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.require_file/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_quoted(a1, a2, a3)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_quoted/3`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.load_file(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.load_file/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_quoted(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_quoted/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.string_to_quoted(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.string_to_quoted/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.prepend_path(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.prepend_path/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.ensure_compiled?(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.ensure_compiled?/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.require_file(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.require_file/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.append_path(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.append_path/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.string_to_quoted!(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.string_to_quoted!/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.string_to_quoted(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.string_to_quoted/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.ensure_loaded(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.ensure_loaded/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_quoted(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_quoted/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.string_to_quoted!(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.string_to_quoted!/2`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.available_compiler_options()
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.available_compiler_options/0`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_string(a1, a2, a3)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_string/3`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_file(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_file/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.compiler_options(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.compiler_options/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.compile_quoted(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.compile_quoted/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.get_docs(module, kind)
+#: lib/exgettext/code.ex:30 
+msgid ""
+"Returns the localized docs for the given module.\n"
+"\n"
+"see `Elixir.Code.get_docs`\n"
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.compile_string(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.compile_string/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.ensure_loaded?(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.ensure_loaded?/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.loaded_files()
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.loaded_files/0`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.delete_path(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.delete_path/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.eval_string(a1)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.eval_string/1`."
+msgstr ""
+#. TRANSLATORS: def Exgettext.Code.load_file(a1, a2)
+#: lib/exgettext/code.ex:1 
+msgid ""
+"See `Code.load_file/2`."
+msgstr ""

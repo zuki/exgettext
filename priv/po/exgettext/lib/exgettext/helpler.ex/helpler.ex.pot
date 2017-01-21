@@ -1,0 +1,13 @@
+#. TRANSLATORS: defmacro Exgettext.Helper.h(other)
+#: lib/exgettext/helpler.ex:13 
+msgid ""
+"Prints the localized documentation for the given module or\n"
+"for the given function/arity pair.\n"
+"if there is not localized document, prints original documentation.\n"
+msgstr ""
+#. TRANSLATORS: def Exgettext.Helper.h()
+#: lib/exgettext/helpler.ex:3 
+msgid ""
+"Prints the localized documentation for IEx.Helpers.\n"
+"if there is not localized document, prints original documentation.\n"
+msgstr ""
