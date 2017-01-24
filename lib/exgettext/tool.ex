@@ -340,12 +340,14 @@ defmodule Exgettext.Tool do
     end
   end
 
-  def xgettext(app, opt) do
+  def xgettext(app, opt, switches \\ []) do
+#    IO.inspect [before: opt]
     {opt, _args, _rest} = if ([] == opt)  do
                             {[], [], []}
                           else
-                            OptionParser.parse(opt)
+                            OptionParser.parse(opt, switches: switches)
                           end
+#    IO.inspect [after: opt]
     apps = [String.to_atom(app) | Keyword.keys(opt)]
     pot_db = potdb(app)
     pot = Exgettext.Util.pot_file(app)

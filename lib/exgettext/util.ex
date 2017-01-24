@@ -20,6 +20,9 @@ defmodule Exgettext.Util do
   def pofiles(lang) do
     Path.wildcard(Path.join([popath("**"), pofile_base(lang)]))
   end
+  def pofiles(app, lang) do
+    Path.wildcard(Path.join([popath(Path.join(app, "**")), pofile_base(lang)]))
+  end
   def pot_file(app) do
     popath("#{app}.pot")
   end
@@ -36,11 +39,11 @@ defmodule Exgettext.Util do
 #    :error_logger.info_report [mod: mod, app: r]
     case r do
       {:ok, app} -> app
-      :undefined -> 
+      :undefined ->
         Code.ensure_loaded(mod)
         case :code.is_loaded(mod) do
           false -> :iex
-          {_, path} -> 
+          {_, path} ->
             app = Path.dirname(path) |>
               Path.join("*.app") |>
               Path.wildcard |>
@@ -53,16 +56,16 @@ defmodule Exgettext.Util do
   end
 
   def defdelegate_filter(src, target, func) do
-    target.module_info(:exports) |> 
+    target.module_info(:exports) |>
       Stream.filter(fn({ff, a}) ->
-                      func.({ff, a}) && 
+                      func.({ff, a}) &&
                         (not ff in [:__info__, :module_info])
                     end) |>
       Stream.map(fn({ff, a}) ->
                    args1 = :lists.seq(1,a)
-                   {ff, Enum.map(args1, 
-                                 fn(x) -> 
-                                   {:"a#{x}", [], nil} 
+                   {ff, Enum.map(args1,
+                                 fn(x) ->
+                                   {:"a#{x}", [], nil}
                                  end)}
                  end) |>
       Enum.map(fn({ff, a}) ->
