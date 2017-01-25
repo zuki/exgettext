@@ -7,12 +7,12 @@ defmodule Mix.Tasks.L10n.Msgmerge do
   ## Synopsis
 
   ```
-      mix l10n.msgmerge [--locale LL_CC.charset] [--update=true] [msgmerge-options]
+      mix l10n.msgmerge [--locale LL_CC.charset] [--update=true] [--subapp Subapp][msgmerge-options]
 
   ```
 
   ## Environment
-  
+
     * LANG -- localize target language for `Language`
 
   ## Mix Environment
@@ -20,7 +20,7 @@ defmodule Mix.Tasks.L10n.Msgmerge do
     * project[:app] -- basename for portable object file.
 
   ## msgmerge options
-    `-D` 
+    `-D`
       search directory.
     `-C`
       compendium file.
@@ -35,7 +35,7 @@ defmodule Mix.Tasks.L10n.Msgmerge do
                               l10n.xgettext task.
 
     * priv/po/**/`LANG`.po -- portable object for translation working.
- 
+
   ### Output
 
     * priv/po/`LANG`.pox --  merge result.
@@ -50,7 +50,12 @@ defmodule Mix.Tasks.L10n.Msgmerge do
 
   """
   def run(opt) do
-    {opt, _args, rest} = OptionParser.parse(opt)
+    {opt, _args, rest} = OptionParser.parse(opt,
+      switches: [
+        locale: :string,
+        update: :boolean,
+        subapp: :string
+      ])
     lang = Exgettext.Runtime.getlang(Keyword.get(opt, :locale, System.get_env("LANG")))
     update = Keyword.get(opt, :update, false)
 
@@ -58,16 +63,17 @@ defmodule Mix.Tasks.L10n.Msgmerge do
 
 #    config = Mix.Project.config()
 #    app = to_string(config[:app])
-    pofiles = Path.wildcard(Path.join([Exgettext.Util.popath(), 
+    subapp = Keyword.get(opt, :subapp, "")
+    pofiles = Path.wildcard(Path.join([Exgettext.Util.popath(subapp),
                                         "**", "*.pot"]))
-    opt = Keyword.drop(opt, [:update, :locale]) 
+    opt = Keyword.drop(opt, [:update, :locale, :subapp])
     opt = Enum.reduce(opt, rest, fn({k,v}, a) -> [{"--#{k}", "#{v}"} | a] end)
-    opts = Enum.reduce(opt, "", fn({k,nil}, a) -> 
+    opts = Enum.reduce(opt, "", fn({k,nil}, a) ->
                                   "#{k} " <> a
                                   ({k, v}, a) ->
                                   "#{k} #{v} " <> a
                        end)
-    Enum.map(pofiles, 
+    Enum.map(pofiles,
              fn(x) ->
                dir = Path.dirname(x)
                pofile = Path.join(dir, Exgettext.Util.pofile_base(lang))
