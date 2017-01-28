@@ -7,3 +7,5 @@ exgettext.pot_db
 mix.lock
 priv/lang
 doc
+*.mo
+
